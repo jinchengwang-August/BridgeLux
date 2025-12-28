@@ -2,14 +2,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Reveal from "./Reveal.jsx";
+import homePhoto from '../assets/homePhoto.jpg';
 
 export default function HomeHero() {
   return (
-    <section id="hero" className="relative overflow-hidden bg-slate-900 text-white">
+    <section id="hero" className="relative overflow-hidden bg-slate-900 text-black">
       {/* 背景视频/图片层 */}
       <div className="absolute inset-0">
-        <video
-          src="/assets/bridgelux-hero.mp4"
+        <img
+          src={homePhoto}
           autoPlay
           muted
           loop
