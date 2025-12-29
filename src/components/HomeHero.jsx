@@ -21,7 +21,7 @@ export default function HomeHero() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-slate-900/20" />
       </div>
 
-      <div className="relative mx-auto flex max-w-6xl flex-col px-4 pb-24 pt-24 lg:min-h-[72vh] lg:flex-row lg:items-end">
+      <div className="relative ml-[50px] mr-[100px] flex max-w-6xl flex-col px-4 pb-24 pt-24 lg:min-h-[72vh] lg:flex-row lg:items-end">
         {/* 左侧主标题 */}
         <Reveal className="max-w-2xl">
           <div className="mb-4 inline-flex rounded-full bg-white/10 px-4 py-1.5 text-[0.75rem] uppercase tracking-[0.22em] text-sky-100">
@@ -30,18 +30,15 @@ export default function HomeHero() {
 
           {/* 标题字号大幅提高 */}
           <h1 className="mb-4 text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
-            Bridging today&apos;s energy needs with{" "}
+            Transforming Solid Waste into {}
             <span className="text-sky-200">
-              tomorrow&apos;s global solutions.
+              Sustainable Value
             </span>
           </h1>
 
           {/* 正文也稍微放大 */}
           <p className="mb-5 text-base text-slate-100/90">
-            BridgeLux Global Holdings Ltd is a placeholder corporate website
-            inspired by large-scale energy companies. Replace this copy with
-            your real strategy, portfolio, and commitments to customers and
-            communities.
+            We specialize in waste-to-energy slag treatment and solid-waste resource recovery, delivering compliant, scalable, and environmentally controlled solutions across China and Southeast Asia.
           </p>
 
           <div className="mb-5 flex flex-wrap gap-2 text-[0.8rem]">
@@ -55,6 +52,8 @@ export default function HomeHero() {
               Future-focused portfolio
             </span>
           </div>
+
+          
 
           <div className="flex flex-wrap items-center gap-3">
             <Link
@@ -77,6 +76,7 @@ export default function HomeHero() {
             real-world use.
           </p>
         </Reveal>
+
 
         {/* 右侧 info 卡片 */}
         <Reveal delay={220} className="mt-10 w-full max-w-sm lg:ml-auto lg:mt-0">
@@ -115,6 +115,27 @@ export default function HomeHero() {
           </div>
         </Reveal>
       </div>
+
+      {/* 右侧标题 */}
+      <div className="absolute top-60 right-80 transform translate-x-1/2 translate-y-[-50%] max-w-xl lg:max-w-3xl px-4 pb-24 pt-24 text-justify">
+        <Reveal className="max-w-2xl">
+          <div className="mb-4 inline-flex rounded-full bg-white/10 px-4 py-1.5 text-[1.3rem] tracking-[0.22em] font-semibold text-black">
+            About us
+          </div>
+        </Reveal>
+      </div>
+
+      {/* 右侧介绍部分 */}
+      <div className="absolute top-120 right-80 transform translate-x-1/2 translate-y-[-50%] max-w-xl lg:max-w-3xl px-4 pb-24 pt-24 text-justify">
+        <Reveal className="max-w-2xl">
+          <div className="mb-4 backdrop-blur-md rounded-md bg-white/10 px-4 py-1.5 text-[0.9rem] font-semibold text-gray-200">
+            We are a professional solid-waste resource recovery enterprise dedicated to the treatment and reutilization of incineration slag and industrial solid waste. Our business spans project development, system design, facility construction, and long-term operation, with solutions tailored to regional waste characteristics and regulatory requirements.
+            Our work is grounded in the core principles of reduction, harmless treatment, and resource utilization. By applying proven engineering methods and continuously optimizing process systems, we convert solid-waste residues into environmentally compliant construction materials and industrial resources, while ensuring strict control of emissions, wastewater, and secondary pollution.
+            With operating projects in multiple provinces in China and in Vietnam, we have accumulated extensive experience in managing complex waste streams, including high-moisture and high-impurity materials common in urban and industrial environments. We position ourselves as a long-term infrastructure partner rather than a short-term service provider, focusing on stability, compliance, and sustainable value creation.
+          </div>
+        </Reveal>
+      </div>
     </section>
+    
   );
 }

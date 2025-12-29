@@ -17,9 +17,10 @@ export default function About() {
               BridgeLux Global Holdings Ltd
             </h1>
             <p className="mt-4 max-w-2xl text-sm text-gray-700 sm:text-[0.95rem]">
-              This placeholder About page is designed to mirror a modern
-              corporate profile. Replace the sections below with your actual
-              history, leadership structure, and global presence narrative.
+              We are a professional solid-waste resource recovery enterprise dedicated to the treatment and reutilization of incineration slag and industrial solid waste. Our business spans project development, system design, facility construction, and long-term operation, with solutions tailored to regional waste characteristics and regulatory requirements.
+Our work is grounded in the core principles of reduction, harmless treatment, and resource utilization. By applying proven engineering methods and continuously optimizing process systems, we convert solid-waste residues into environmentally compliant construction materials and industrial resources, while ensuring strict control of emissions, wastewater, and secondary pollution.
+With operating projects in multiple provinces in China and in Vietnam, we have accumulated extensive experience in managing complex waste streams, including high-moisture and high-impurity materials common in urban and industrial environments. We position ourselves as a long-term infrastructure partner rather than a short-term service provider, focusing on stability, compliance, and sustainable value creation.
+
             </p>
           </Reveal>
         </div>

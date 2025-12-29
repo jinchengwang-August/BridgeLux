@@ -62,9 +62,7 @@ export default function ScrollMarqueeSection() {
         </div>
 
         <p className="mt-6 max-w-xl text-sm text-sky-50/90 sm:text-base">
-          We&apos;re working to deliver the energy needed today, to lower the
-          carbon intensity of operations, and to build the lower-carbon energy
-          system of tomorrow. Replace this paragraph with your own statement.
+          By integrating proven engineering systems with circular-economy principles, we convert incineration residues and industrial solid waste into reusable materials for infrastructure and construction.
         </p>
 
         <div className="mt-6">
