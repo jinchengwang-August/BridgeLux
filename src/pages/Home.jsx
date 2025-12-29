@@ -7,6 +7,13 @@ import ImageCarousel from "../components/ImageCarousel.jsx";
 import ScrollMarqueeSection from "../components/ScrollMarqueeSection.jsx";
 import TypingHeadline from "../components/TypingHeadline.jsx";
 import FancyVerticalGallery from "../components/FancyVerticalGallery.jsx";
+import About from "../pages/About";
+import technology1 from "../assets/technology1.jpg";
+import technology2 from "../assets/technology2.jpg";
+import partner1 from "../assets/partner1.jpg";
+import partner2 from "../assets/partner2.jpg";
+import partner3 from "../assets/partner3.jpg";
+import partner4 from "../assets/partner4.jpg";
 
 export default function Home() {
   return (
@@ -15,28 +22,36 @@ export default function Home() {
 
       <ScrollMarqueeSection />
 
-      {/* 业务板块 */}
+      {/* core solutions */}
       <section id="businesses" className="bg-gray-100">
         <div className="mx-auto max-w-6xl px-4 py-10">
           <SectionHeader
             eyebrow="Our portfolio"
-            title="Businesses & operating segments"
+            title="Core Solutions"
             description="High-level placeholder overview of core business segments. Replace with actual descriptions and regional detail."
           />
           <div className="grid gap-5 md:grid-cols-3">
             {[
               {
                 label: "Segment 01",
-                title: "Upstream & resource development",
+                title: "WTE Slag Resource Recovery",
+                description: "We provide comprehensive solutions for the treatment and resource utilization of waste-to-energy incineration bottom ash. Through multi-stage crushing, screening, separation, and purification processes, incineration slag is transformed into clean aggregates and reusable materials, while ferrous and non-ferrous metals are efficiently recovered."
               },
               {
                 label: "Segment 02",
-                title: "Midstream & infrastructure",
+                title: "Industrial Solid Waste Utilization",
+                description: "In addition to municipal incineration slag, we offer tailored treatment solutions for industrial solid waste such as biomass slag and coal-derived residues. Process configurations are adapted to material composition, moisture levels, and local environmental standards to ensure safe handling and effective reuse."
               },
               {
                 label: "Segment 03",
-                title: "Downstream & new energies",
+                title: "Environmental Control Systems",
+                description: "All processing lines are designed with fully enclosed material handling, odor control, dust suppression, and closed-loop water circulation systems. These measures ensure zero wastewater discharge, minimize fugitive emissions, and prevent secondary environmental impacts during both construction and operation phases."
               },
+              {
+                label: "Segment 04",
+                title: "Resource-Based End Products",
+                description: "Recovered materials are processed into stable, quality-controlled products suitable for use in green building materials, road base layers, municipal engineering applications, and other infrastructure projects, supporting local circular economy objectives."
+              }
             ].map((seg, idx) => (
               <Reveal key={seg.label} delay={idx * 90}>
                 <article className="group h-full rounded-2xl border border-gray-200 bg-white px-4 py-4 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
@@ -47,9 +62,7 @@ export default function Home() {
                     {seg.title}
                   </h3>
                   <p className="mt-2 text-[0.8rem] text-gray-600">
-                    Placeholder copy describing this segment&apos;s focus,
-                    assets, and strategic role. Swap this for real portfolio
-                    information and KPIs.
+                    {seg.description}
                   </p>
                   <Link
                     to="/businesses"
@@ -70,41 +83,45 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-10">
           <SectionHeader
             eyebrow="Operations"
-            title="A global operational footprint"
+            title="Technology & Process"
             description="Reserve these image positions for key assets, regions, or projects across your portfolio."
           />
           <Reveal>
             <div className="grid gap-4 md:grid-cols-[1.6fr,1.4fr]">
-              {/* 左侧：一大两小 */}
+              {/* 左侧：两大一小 */}
               <div className="grid gap-4">
-                <div className="relative h-100 overflow-hidden rounded-2xl bg-slate-900 text-white shadow-md">
+                <div className="relative h-150 overflow-hidden rounded-2xl bg-slate-900 text-gray-200">
                   <img
-                    src="/assets/ops-large-01.jpg"
-                    alt="Large operations placeholder"
+                    src="/assets/technology1.jpg"
+                    alt="place"
                     className="h-full w-full object-cover opacity-90"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/20 to-transparent" />
-                  <div className="absolute bottom-3 left-3">
-                    <div className="text-[0.7rem] uppercase tracking-[0.18em] text-sky-100">
-                      Flagship asset · Placeholder
-                    </div>
-                    <div className="text-sm font-semibold">
-                      Reserve this space for a key upstream or integrated asset.
+                  <div className="absolute bottom-3 left-3 pr-4">
+                    <div className="text-[1.0rem] font-s text-justify backdrop-blur-md text-sky-100" >
+                      Our technology framework is built around a modular, end-to-end processing system that covers pre-treatment, separation, purification, and product formation. Incineration slag first undergoes controlled aging and conditioning, followed by multi-level crushing and screening to achieve particle size differentiation.
+Advanced physical separation techniques—including magnetic separation, eddy current separation, and gravity-based sorting—are applied to recover metals and remove impurities. Fine tailings are further purified to meet material reuse standards, while recycled aggregates are processed for consistent quality and performance.
+
                     </div>
                   </div>
                 </div>
+
+
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="relative h-56 overflow-hidden rounded-2xl bg-slate-800 text-white shadow-md">
+
+                  <div className="relative h-150 overflow-hidden rounded-2xl bg-slate-900 text-white shadow-md">
                     <img
-                      src="/assets/ops-small-01.jpg"
+                      src="/assets/technology2.jpg"
                       alt="Midstream placeholder"
                       className="h-full w-full object-cover opacity-90"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/20 to-transparent" />
-                    <div className="absolute bottom-2 left-2 text-[0.7rem] text-slate-50">
-                      Midstream & logistics (placeholder)
+                    <div className="absolute bottom-2 left-2 pr-4 text-[1.0rem] font-s text-justify backdrop-blur-md text-sky-100">
+                      All facilities incorporate integrated environmental protection systems, including sealed conveyors, odor treatment units, and internal water recycling. Process designs are optimized for local conditions, such as high humidity, high organic content, or plateau climates, ensuring stable operation and compliance with applicable environmental regulations.
                     </div>
                   </div>
+
+
                   <div className="relative h-56 overflow-hidden rounded-2xl bg-slate-800 text-white shadow-md">
                     <img
                       src="/assets/ops-small-02.jpg"
@@ -116,6 +133,8 @@ export default function Home() {
                       Downstream & marketing (placeholder)
                     </div>
                   </div>
+
+
                 </div>
               </div>
 
@@ -165,16 +184,86 @@ export default function Home() {
       <section id="vision" className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-10">
           <TypingHeadline
-            text="Design the future of global energy with BridgeLux."
+            text="Projects & References"
             className="text-3xl font-semibold text-gray-900 sm:text-4xl md:text-5xl"
           />
 
-          <p className="mt-3 max-w-xl text-sm text-gray-600">
-            Replace this paragraph with a key statement about your long-term
-            vision, strategy, or promise to customers and communities.
-          </p>
+          {/* 右侧：文字内容 */}
+              <div className="flex flex-col gap-4 mt-8 mb-20">
+                {/* 第一段 */}
+                <p className="text-sm text-gray-700">
+                  We have developed and operated multiple solid-waste resource recovery projects across different regions, serving as practical demonstrations of scalable and compliant WTE slag utilization.
+                </p>
+
+                {/* 第二段 */}
+                <p className="text-sm text-gray-700">
+                  In Vietnam, our projects in Ho Chi Minh City support major municipal waste-to-energy facilities by providing dedicated slag resource recovery lines, enabling the transition from simple disposal to systematic reuse. These projects play a key role in advancing integrated “incineration plus resource recovery” models in Southeast Asia.
+                </p>
+
+                {/* 第三段 */}
+                <p className="text-sm text-gray-700">
+                  In Mainland China, we have participated in and operated WTE slag treatment and industrial solid-waste utilization projects across provinces including Shandong, Guizhou, Jilin, Hebei, Guangxi, and Henan. These facilities serve both urban and regional waste streams, with processing capacities adapted to local demand and policy frameworks.
+                </p>
+
+                {/* 第四段 */}
+                <p className="text-sm text-gray-700">
+                  Collectively, our project portfolio reflects our ability to deliver reliable, regulation-aligned solutions under diverse environmental and operational conditions, and to support municipalities and industrial partners in building modern, sustainable solid-waste management systems.
+                </p>
+              </div>
         </div>
       </section>
+
+{/* 伙伴 */}
+      <section id="partner" className="bg-white2">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+          
+          <Reveal>
+
+          <div className="relevant bottom-3 mb-10 left-3 w-full z-10">
+            <div className="text-[1.5rem] font-s text-justify backdrop-blur-md text-black">
+    Partners 
+            </div>
+          </div>
+
+
+          <div className="relevant bottom-3 left-3 w-full z-10">
+            <div className="text-[1.0rem] font-s mb-40 text-justify text-black">
+    BridgeLux partners with leading regional players including Vietstar, BCG Energy, SUS Environment, and other global energy innovators, building circular systems that convert waste into valuable materials for a low-carbon future.
+            </div>
+          </div>
+
+          <div className="absolute" style={{ top: '150px', left: '10px' }}>
+            <img 
+             src="/assets/partner1.jpg" 
+             alt="Left Bottom Image" 
+             className="w-32 h-32" />
+          </div>
+
+          <div className="absolute" style={{ top: '150px', left: '250px' }}>
+            <img 
+             src="/assets/partner2.jpg" 
+             alt="Left Bottom Image" 
+             className="w-32 h-32" />
+          </div>
+
+          <div className="absolute" style={{ top: '150px', left: '490px' }}>
+            <img 
+             src="/assets/partner3.jpg" 
+             alt="Left Bottom Image" 
+             className="w-60 h-32" />
+          </div>
+
+          <div className="absolute" style={{ top: '150px', left: '840px' }}>
+            <img 
+             src="/assets/partner4.jpg" 
+             alt="Left Bottom Image" 
+             className="w-60 h-32" />
+          </div>
+
+          </Reveal>
+        </div>
+      </section>
+
 
       {/* Sustainability 条 */}
       <section id="sustainability" className="bg-sky-50">
