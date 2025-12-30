@@ -213,56 +213,61 @@ Advanced physical separation techniques—including magnetic separation, eddy cu
         </div>
       </section>
 
-{/* 伙伴 */}
-      <section id="partner" className="bg-white2">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-          
-          <Reveal>
 
-          <div className="relevant bottom-3 mb-10 left-3 w-full z-10">
-            <div className="text-[1.5rem] font-s text-justify backdrop-blur-md text-black">
-    Partners 
-            </div>
-          </div>
-
-
-          <div className="relevant bottom-3 left-3 w-full z-10">
-            <div className="text-[1.0rem] font-s mb-40 text-justify text-black">
-    BridgeLux partners with leading regional players including Vietstar, BCG Energy, SUS Environment, and other global energy innovators, building circular systems that convert waste into valuable materials for a low-carbon future.
-            </div>
-          </div>
-
-          <div className="absolute" style={{ top: '150px', left: '10px' }}>
-            <img 
-             src="/assets/partner1.jpg" 
-             alt="Left Bottom Image" 
-             className="w-32 h-32" />
-          </div>
-
-          <div className="absolute" style={{ top: '150px', left: '250px' }}>
-            <img 
-             src="/assets/partner2.jpg" 
-             alt="Left Bottom Image" 
-             className="w-32 h-32" />
-          </div>
-
-          <div className="absolute" style={{ top: '150px', left: '490px' }}>
-            <img 
-             src="/assets/partner3.jpg" 
-             alt="Left Bottom Image" 
-             className="w-60 h-32" />
-          </div>
-
-          <div className="absolute" style={{ top: '150px', left: '840px' }}>
-            <img 
-             src="/assets/partner4.jpg" 
-             alt="Left Bottom Image" 
-             className="w-60 h-32" />
-          </div>
-
-          </Reveal>
+<section id="partner" className="bg-white2">
+  <div className="mx-auto max-w-6xl px-4 py-10">
+    <Reveal>
+      <div className="relevant bottom-3 mb-10 left-3 w-full z-10">
+        <div className="text-[1.5rem] font-s text-justify backdrop-blur-md text-black">
+          Partners
         </div>
-      </section>
+      </div>
+
+      <div className="relevant bottom-3 left-3 w-full z-10">
+        <div className="text-[1.0rem] font-s mb-10 text-justify text-black">
+          BridgeLux partners with leading regional players including Vietstar, BCG Energy, SUS Environment, and other global energy innovators, building circular systems that convert waste into valuable materials for a low-carbon future.
+        </div>
+      </div>
+
+      {/* Partners Container */}
+      <div className="partners-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', gap: '40px' }}>
+        
+        {/*  Partner Image 1 */}
+        <div className="partner-img" style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <img 
+            src="/assets/partner1.jpg" 
+            alt="Left Bottom Image" 
+            style={{ objectFit: 'contain', height: '100%', width: 'auto' }} />
+        </div>
+
+        {/*  Partner Image 2 */}
+        <div className="partner-img" style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <img 
+            src="/assets/partner2.jpg" 
+            alt="Left Bottom Image" 
+            style={{ objectFit: 'contain', height: '100%', width: 'auto' }} />
+        </div>
+
+        {/*  Partner Image 3 */}
+        <div className="partner-img" style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <img 
+            src="/assets/partner3.jpg" 
+            alt="Left Bottom Image" 
+            style={{ objectFit: 'contain', height: '100%', width: 'auto' }} />
+        </div>
+
+        {/*  Partner Image 4 */}
+        <div className="partner-img" style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <img 
+            src="/assets/partner4.jpg" 
+            alt="Left Bottom Image" 
+            style={{ objectFit: 'contain', height: '100%', width: 'auto' }} />
+        </div>
+      </div>
+
+    </Reveal>
+  </div>
+</section>
 
 
       {/* Sustainability 条 */}
